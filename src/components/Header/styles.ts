@@ -4,6 +4,8 @@ export const StyledHeader = styled.header`
   width: 100%;
   height: 6rem;
   background-color: #2c2c2c;
+  position: fixed;
+  top: 0;
 `
 export const Wrapper = styled.div`
   width: 90%;
@@ -22,6 +24,12 @@ export const ButtonWrapper = styled.div`
   gap: 3rem;
   margin-right: 6rem;
 `
+
+export const SearchBar = styled.input`
+  padding: 0 2rem;
+  border: none;
+  border-radius:5px ;
+`
 export const CartButton = styled.button`
   width: 7rem;
   height: 2.5rem;
@@ -32,6 +40,7 @@ export const CartButton = styled.button`
   border-radius: 5px;
   gap: 4px;
   transition: all 0.2s;
+  background-color: #fff;
 
   &:hover{
     transform: translateY(-2px);
@@ -47,6 +56,7 @@ export const LoginButton = styled.button`
   border-radius: 5px;
   gap: 4px;
   transition: all 0.2s;
+  background-color: #fff;
 
   &:hover{
     transform: translateY(-2px);

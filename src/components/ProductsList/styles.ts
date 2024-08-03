@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.main`
   max-width: 90%;
-  margin: 4rem auto;
+  margin: 9rem auto;
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;

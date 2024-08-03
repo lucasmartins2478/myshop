@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface ContainerProps {
-  showCart:boolean
+  showCart: boolean;
 }
 
 export const CartContainer = styled.aside<ContainerProps>`
@@ -9,19 +9,22 @@ export const CartContainer = styled.aside<ContainerProps>`
   height: 100vh;
   position: fixed;
   top: 0;
-  right: ${(props)=> props.showCart ? "0" : "-350px"};
+  right: ${(props) => (props.showCart ? "0" : "-350px")};
   background-color: #fff;
   padding: 2rem;
   transition: ease-in-out 0.3s;
-  box-shadow: -5px 0 15px rgba(0,0,0,0.25);
-`
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.25);
+`;
 
 export const CartHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`
-export const CartTitle = styled.h1``
+  margin-bottom: 2rem;
+`;
+export const CartTitle = styled.h1`
+  
+`;
 export const CloseCartButton = styled.button`
   background-color: transparent;
   border: none;
@@ -30,19 +33,29 @@ export const CloseCartButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  &:hover{
+  &:hover {
     transform: translateY(-2px);
   }
-`
-export const TotalCart = styled.p``
+`;
+export const TotalCart = styled.p``;
 
-export const CartProductsList = styled.ul``
+export const CartProductsList = styled.ul`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+`;
 
-export const CartProductItem = styled.li``
+export const CartProductItem = styled.li`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+`;
 
 export const RemoveFromCartButton = styled.button`
   background-color: transparent;
   font-size: 1rem;
   border: none;
-`
-
+`;

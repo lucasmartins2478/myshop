@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CardWrapper = styled.div`
   width: 100%;
-  height: 40rem;
+  height: 39rem;
   padding: 2rem;
   margin: 0 auto;
   display: flex;

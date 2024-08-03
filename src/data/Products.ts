@@ -30,6 +30,7 @@ export interface Product {
 // }
 
 // export const products: Product[] = [];
+export const ProductsFiltred:Product[] = []
 
 export const products: Product[] = [
   {

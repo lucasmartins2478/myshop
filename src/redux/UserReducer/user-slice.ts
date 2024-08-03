@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-interface User{
+export interface User{
   email:string,
   password:string,
-  name:string,
-  age:number
+  name?:string,
+  age?:number
 }
 interface UserState{
   user:User | null,
